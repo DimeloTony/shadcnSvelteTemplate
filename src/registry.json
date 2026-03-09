@@ -1,0 +1,1992 @@
+{
+	"$schema": "https://shadcn-svelte.com/schema/registry.json",
+	"name": "shadcn-svelte",
+	"homepage": "https://shadcn-svelte.com",
+	"overrideDependencies": ["vaul-svelte@next"],
+	"aliases": {
+		"lib": "$lib/registry/lib",
+		"ui": "$lib/registry/ui",
+		"components": "./components",
+		"utils": "$lib/utils",
+		"hooks": "$lib/registry/hooks"
+	},
+	"items": [
+		{
+			"name": "init",
+			"type": "registry:style",
+			"devDependencies": ["tailwind-variants", "@lucide/svelte", "tw-animate-css"],
+			"registryDependencies": ["utils"],
+			"files": []
+		},
+		{
+			"name": "accordion",
+			"type": "registry:ui",
+			"registryDependencies": [],
+			"files": [
+				{
+					"type": "registry:file",
+					"path": "src/lib/components/ui/accordion/accordion-content.svelte"
+				},
+				{
+					"type": "registry:file",
+					"path": "src/lib/components/ui/accordion/accordion-item.svelte"
+				},
+				{
+					"type": "registry:file",
+					"path": "src/lib/components/ui/accordion/accordion-trigger.svelte"
+				},
+				{
+					"type": "registry:file",
+					"path": "src/lib/components/ui/accordion/accordion.svelte"
+				},
+				{
+					"type": "registry:file",
+					"path": "src/lib/components/ui/accordion/index.ts"
+				}
+			]
+		},
+		{
+			"name": "alert",
+			"type": "registry:ui",
+			"registryDependencies": [],
+			"files": [
+				{
+					"type": "registry:file",
+					"path": "src/lib/components/ui/alert/alert-description.svelte"
+				},
+				{
+					"type": "registry:file",
+					"path": "src/lib/components/ui/alert/alert-title.svelte"
+				},
+				{
+					"type": "registry:file",
+					"path": "src/lib/components/ui/alert/alert.svelte"
+				},
+				{
+					"type": "registry:file",
+					"path": "src/lib/components/ui/alert/index.ts"
+				}
+			]
+		},
+		{
+			"name": "alert-dialog",
+			"type": "registry:ui",
+			"registryDependencies": ["button"],
+			"files": [
+				{
+					"type": "registry:file",
+					"path": "src/lib/components/ui/alert-dialog/alert-dialog-action.svelte"
+				},
+				{
+					"type": "registry:file",
+					"path": "src/lib/components/ui/alert-dialog/alert-dialog-cancel.svelte"
+				},
+				{
+					"type": "registry:file",
+					"path": "src/lib/components/ui/alert-dialog/alert-dialog-content.svelte"
+				},
+				{
+					"type": "registry:file",
+					"path": "src/lib/components/ui/alert-dialog/alert-dialog-description.svelte"
+				},
+				{
+					"type": "registry:file",
+					"path": "src/lib/components/ui/alert-dialog/alert-dialog-footer.svelte"
+				},
+				{
+					"type": "registry:file",
+					"path": "src/lib/components/ui/alert-dialog/alert-dialog-header.svelte"
+				},
+				{
+					"type": "registry:file",
+					"path": "src/lib/components/ui/alert-dialog/alert-dialog-overlay.svelte"
+				},
+				{
+					"type": "registry:file",
+					"path": "src/lib/components/ui/alert-dialog/alert-dialog-portal.svelte"
+				},
+				{
+					"type": "registry:file",
+					"path": "src/lib/components/ui/alert-dialog/alert-dialog-title.svelte"
+				},
+				{
+					"type": "registry:file",
+					"path": "src/lib/components/ui/alert-dialog/alert-dialog-trigger.svelte"
+				},
+				{
+					"type": "registry:file",
+					"path": "src/lib/components/ui/alert-dialog/alert-dialog.svelte"
+				},
+				{
+					"type": "registry:file",
+					"path": "src/lib/components/ui/alert-dialog/index.ts"
+				}
+			]
+		},
+		{
+			"name": "aspect-ratio",
+			"type": "registry:ui",
+			"registryDependencies": [],
+			"files": [
+				{
+					"type": "registry:file",
+					"path": "src/lib/components/ui/aspect-ratio/aspect-ratio.svelte"
+				},
+				{
+					"type": "registry:file",
+					"path": "src/lib/components/ui/aspect-ratio/index.ts"
+				}
+			]
+		},
+		{
+			"name": "avatar",
+			"type": "registry:ui",
+			"registryDependencies": [],
+			"files": [
+				{
+					"type": "registry:file",
+					"path": "src/lib/components/ui/avatar/avatar-fallback.svelte"
+				},
+				{
+					"type": "registry:file",
+					"path": "src/lib/components/ui/avatar/avatar-image.svelte"
+				},
+				{
+					"type": "registry:file",
+					"path": "src/lib/components/ui/avatar/avatar.svelte"
+				},
+				{
+					"type": "registry:file",
+					"path": "src/lib/components/ui/avatar/index.ts"
+				}
+			]
+		},
+		{
+			"name": "badge",
+			"type": "registry:ui",
+			"registryDependencies": [],
+			"files": [
+				{
+					"type": "registry:file",
+					"path": "src/lib/components/ui/badge/badge.svelte"
+				},
+				{
+					"type": "registry:file",
+					"path": "src/lib/components/ui/badge/index.ts"
+				}
+			]
+		},
+		{
+			"name": "breadcrumb",
+			"type": "registry:ui",
+			"registryDependencies": [],
+			"files": [
+				{
+					"type": "registry:file",
+					"path": "src/lib/components/ui/breadcrumb/breadcrumb-ellipsis.svelte"
+				},
+				{
+					"type": "registry:file",
+					"path": "src/lib/components/ui/breadcrumb/breadcrumb-item.svelte"
+				},
+				{
+					"type": "registry:file",
+					"path": "src/lib/components/ui/breadcrumb/breadcrumb-link.svelte"
+				},
+				{
+					"type": "registry:file",
+					"path": "src/lib/components/ui/breadcrumb/breadcrumb-list.svelte"
+				},
+				{
+					"type": "registry:file",
+					"path": "src/lib/components/ui/breadcrumb/breadcrumb-page.svelte"
+				},
+				{
+					"type": "registry:file",
+					"path": "src/lib/components/ui/breadcrumb/breadcrumb-separator.svelte"
+				},
+				{
+					"type": "registry:file",
+					"path": "src/lib/components/ui/breadcrumb/breadcrumb.svelte"
+				},
+				{
+					"type": "registry:file",
+					"path": "src/lib/components/ui/breadcrumb/index.ts"
+				}
+			]
+		},
+		{
+			"name": "button",
+			"type": "registry:ui",
+			"registryDependencies": [],
+			"files": [
+				{
+					"type": "registry:file",
+					"path": "src/lib/components/ui/button/button.svelte"
+				},
+				{
+					"type": "registry:file",
+					"path": "src/lib/components/ui/button/index.ts"
+				}
+			]
+		},
+		{
+			"name": "button-group",
+			"type": "registry:ui",
+			"registryDependencies": ["separator"],
+			"files": [
+				{
+					"type": "registry:file",
+					"path": "src/lib/components/ui/button-group/button-group-separator.svelte"
+				},
+				{
+					"type": "registry:file",
+					"path": "src/lib/components/ui/button-group/button-group-text.svelte"
+				},
+				{
+					"type": "registry:file",
+					"path": "src/lib/components/ui/button-group/button-group.svelte"
+				},
+				{
+					"type": "registry:file",
+					"path": "src/lib/components/ui/button-group/index.ts"
+				}
+			]
+		},
+		{
+			"name": "calendar",
+			"type": "registry:ui",
+			"registryDependencies": ["button"],
+			"files": [
+				{
+					"type": "registry:file",
+					"path": "src/lib/components/ui/calendar/calendar-caption.svelte"
+				},
+				{
+					"type": "registry:file",
+					"path": "src/lib/components/ui/calendar/calendar-cell.svelte"
+				},
+				{
+					"type": "registry:file",
+					"path": "src/lib/components/ui/calendar/calendar-day.svelte"
+				},
+				{
+					"type": "registry:file",
+					"path": "src/lib/components/ui/calendar/calendar-grid-body.svelte"
+				},
+				{
+					"type": "registry:file",
+					"path": "src/lib/components/ui/calendar/calendar-grid-head.svelte"
+				},
+				{
+					"type": "registry:file",
+					"path": "src/lib/components/ui/calendar/calendar-grid-row.svelte"
+				},
+				{
+					"type": "registry:file",
+					"path": "src/lib/components/ui/calendar/calendar-grid.svelte"
+				},
+				{
+					"type": "registry:file",
+					"path": "src/lib/components/ui/calendar/calendar-head-cell.svelte"
+				},
+				{
+					"type": "registry:file",
+					"path": "src/lib/components/ui/calendar/calendar-header.svelte"
+				},
+				{
+					"type": "registry:file",
+					"path": "src/lib/components/ui/calendar/calendar-heading.svelte"
+				},
+				{
+					"type": "registry:file",
+					"path": "src/lib/components/ui/calendar/calendar-month-select.svelte"
+				},
+				{
+					"type": "registry:file",
+					"path": "src/lib/components/ui/calendar/calendar-month.svelte"
+				},
+				{
+					"type": "registry:file",
+					"path": "src/lib/components/ui/calendar/calendar-months.svelte"
+				},
+				{
+					"type": "registry:file",
+					"path": "src/lib/components/ui/calendar/calendar-nav.svelte"
+				},
+				{
+					"type": "registry:file",
+					"path": "src/lib/components/ui/calendar/calendar-next-button.svelte"
+				},
+				{
+					"type": "registry:file",
+					"path": "src/lib/components/ui/calendar/calendar-prev-button.svelte"
+				},
+				{
+					"type": "registry:file",
+					"path": "src/lib/components/ui/calendar/calendar-year-select.svelte"
+				},
+				{
+					"type": "registry:file",
+					"path": "src/lib/components/ui/calendar/calendar.svelte"
+				},
+				{
+					"type": "registry:file",
+					"path": "src/lib/components/ui/calendar/index.ts"
+				}
+			]
+		},
+		{
+			"name": "card",
+			"type": "registry:ui",
+			"registryDependencies": [],
+			"files": [
+				{
+					"type": "registry:file",
+					"path": "src/lib/components/ui/card/card-action.svelte"
+				},
+				{
+					"type": "registry:file",
+					"path": "src/lib/components/ui/card/card-content.svelte"
+				},
+				{
+					"type": "registry:file",
+					"path": "src/lib/components/ui/card/card-description.svelte"
+				},
+				{
+					"type": "registry:file",
+					"path": "src/lib/components/ui/card/card-footer.svelte"
+				},
+				{
+					"type": "registry:file",
+					"path": "src/lib/components/ui/card/card-header.svelte"
+				},
+				{
+					"type": "registry:file",
+					"path": "src/lib/components/ui/card/card-title.svelte"
+				},
+				{
+					"type": "registry:file",
+					"path": "src/lib/components/ui/card/card.svelte"
+				},
+				{
+					"type": "registry:file",
+					"path": "src/lib/components/ui/card/index.ts"
+				}
+			]
+		},
+		{
+			"name": "carousel",
+			"type": "registry:ui",
+			"registryDependencies": ["button"],
+			"files": [
+				{
+					"type": "registry:file",
+					"path": "src/lib/components/ui/carousel/carousel-content.svelte"
+				},
+				{
+					"type": "registry:file",
+					"path": "src/lib/components/ui/carousel/carousel-item.svelte"
+				},
+				{
+					"type": "registry:file",
+					"path": "src/lib/components/ui/carousel/carousel-next.svelte"
+				},
+				{
+					"type": "registry:file",
+					"path": "src/lib/components/ui/carousel/carousel-previous.svelte"
+				},
+				{
+					"type": "registry:file",
+					"path": "src/lib/components/ui/carousel/carousel.svelte"
+				},
+				{
+					"type": "registry:file",
+					"path": "src/lib/components/ui/carousel/context.ts"
+				},
+				{
+					"type": "registry:file",
+					"path": "src/lib/components/ui/carousel/index.ts"
+				}
+			]
+		},
+		{
+			"name": "chart",
+			"type": "registry:ui",
+			"registryDependencies": [],
+			"files": [
+				{
+					"type": "registry:file",
+					"path": "src/lib/components/ui/chart/chart-container.svelte"
+				},
+				{
+					"type": "registry:file",
+					"path": "src/lib/components/ui/chart/chart-style.svelte"
+				},
+				{
+					"type": "registry:file",
+					"path": "src/lib/components/ui/chart/chart-tooltip.svelte"
+				},
+				{
+					"type": "registry:file",
+					"path": "src/lib/components/ui/chart/chart-utils.ts"
+				},
+				{
+					"type": "registry:file",
+					"path": "src/lib/components/ui/chart/index.ts"
+				}
+			]
+		},
+		{
+			"name": "checkbox",
+			"type": "registry:ui",
+			"registryDependencies": [],
+			"files": [
+				{
+					"type": "registry:file",
+					"path": "src/lib/components/ui/checkbox/checkbox.svelte"
+				},
+				{
+					"type": "registry:file",
+					"path": "src/lib/components/ui/checkbox/index.ts"
+				}
+			]
+		},
+		{
+			"name": "collapsible",
+			"type": "registry:ui",
+			"registryDependencies": [],
+			"files": [
+				{
+					"type": "registry:file",
+					"path": "src/lib/components/ui/collapsible/collapsible-content.svelte"
+				},
+				{
+					"type": "registry:file",
+					"path": "src/lib/components/ui/collapsible/collapsible-trigger.svelte"
+				},
+				{
+					"type": "registry:file",
+					"path": "src/lib/components/ui/collapsible/collapsible.svelte"
+				},
+				{
+					"type": "registry:file",
+					"path": "src/lib/components/ui/collapsible/index.ts"
+				}
+			]
+		},
+		{
+			"name": "command",
+			"type": "registry:ui",
+			"registryDependencies": ["dialog"],
+			"files": [
+				{
+					"type": "registry:file",
+					"path": "src/lib/components/ui/command/command-dialog.svelte"
+				},
+				{
+					"type": "registry:file",
+					"path": "src/lib/components/ui/command/command-empty.svelte"
+				},
+				{
+					"type": "registry:file",
+					"path": "src/lib/components/ui/command/command-group.svelte"
+				},
+				{
+					"type": "registry:file",
+					"path": "src/lib/components/ui/command/command-input.svelte"
+				},
+				{
+					"type": "registry:file",
+					"path": "src/lib/components/ui/command/command-item.svelte"
+				},
+				{
+					"type": "registry:file",
+					"path": "src/lib/components/ui/command/command-link-item.svelte"
+				},
+				{
+					"type": "registry:file",
+					"path": "src/lib/components/ui/command/command-list.svelte"
+				},
+				{
+					"type": "registry:file",
+					"path": "src/lib/components/ui/command/command-loading.svelte"
+				},
+				{
+					"type": "registry:file",
+					"path": "src/lib/components/ui/command/command-separator.svelte"
+				},
+				{
+					"type": "registry:file",
+					"path": "src/lib/components/ui/command/command-shortcut.svelte"
+				},
+				{
+					"type": "registry:file",
+					"path": "src/lib/components/ui/command/command.svelte"
+				},
+				{
+					"type": "registry:file",
+					"path": "src/lib/components/ui/command/index.ts"
+				}
+			]
+		},
+		{
+			"name": "context-menu",
+			"type": "registry:ui",
+			"registryDependencies": [],
+			"files": [
+				{
+					"type": "registry:file",
+					"path": "src/lib/components/ui/context-menu/context-menu-checkbox-item.svelte"
+				},
+				{
+					"type": "registry:file",
+					"path": "src/lib/components/ui/context-menu/context-menu-content.svelte"
+				},
+				{
+					"type": "registry:file",
+					"path": "src/lib/components/ui/context-menu/context-menu-group-heading.svelte"
+				},
+				{
+					"type": "registry:file",
+					"path": "src/lib/components/ui/context-menu/context-menu-group.svelte"
+				},
+				{
+					"type": "registry:file",
+					"path": "src/lib/components/ui/context-menu/context-menu-item.svelte"
+				},
+				{
+					"type": "registry:file",
+					"path": "src/lib/components/ui/context-menu/context-menu-label.svelte"
+				},
+				{
+					"type": "registry:file",
+					"path": "src/lib/components/ui/context-menu/context-menu-portal.svelte"
+				},
+				{
+					"type": "registry:file",
+					"path": "src/lib/components/ui/context-menu/context-menu-radio-group.svelte"
+				},
+				{
+					"type": "registry:file",
+					"path": "src/lib/components/ui/context-menu/context-menu-radio-item.svelte"
+				},
+				{
+					"type": "registry:file",
+					"path": "src/lib/components/ui/context-menu/context-menu-separator.svelte"
+				},
+				{
+					"type": "registry:file",
+					"path": "src/lib/components/ui/context-menu/context-menu-shortcut.svelte"
+				},
+				{
+					"type": "registry:file",
+					"path": "src/lib/components/ui/context-menu/context-menu-sub-content.svelte"
+				},
+				{
+					"type": "registry:file",
+					"path": "src/lib/components/ui/context-menu/context-menu-sub-trigger.svelte"
+				},
+				{
+					"type": "registry:file",
+					"path": "src/lib/components/ui/context-menu/context-menu-sub.svelte"
+				},
+				{
+					"type": "registry:file",
+					"path": "src/lib/components/ui/context-menu/context-menu-trigger.svelte"
+				},
+				{
+					"type": "registry:file",
+					"path": "src/lib/components/ui/context-menu/context-menu.svelte"
+				},
+				{
+					"type": "registry:file",
+					"path": "src/lib/components/ui/context-menu/index.ts"
+				}
+			]
+		},
+		{
+			"name": "data-table",
+			"type": "registry:ui",
+			"registryDependencies": [],
+			"files": [
+				{
+					"type": "registry:file",
+					"path": "src/lib/components/ui/data-table/data-table.svelte.ts"
+				},
+				{
+					"type": "registry:file",
+					"path": "src/lib/components/ui/data-table/flex-render.svelte"
+				},
+				{
+					"type": "registry:file",
+					"path": "src/lib/components/ui/data-table/index.ts"
+				},
+				{
+					"type": "registry:file",
+					"path": "src/lib/components/ui/data-table/render-helpers.ts"
+				}
+			]
+		},
+		{
+			"name": "dialog",
+			"type": "registry:ui",
+			"registryDependencies": [],
+			"files": [
+				{
+					"type": "registry:file",
+					"path": "src/lib/components/ui/dialog/dialog-close.svelte"
+				},
+				{
+					"type": "registry:file",
+					"path": "src/lib/components/ui/dialog/dialog-content.svelte"
+				},
+				{
+					"type": "registry:file",
+					"path": "src/lib/components/ui/dialog/dialog-description.svelte"
+				},
+				{
+					"type": "registry:file",
+					"path": "src/lib/components/ui/dialog/dialog-footer.svelte"
+				},
+				{
+					"type": "registry:file",
+					"path": "src/lib/components/ui/dialog/dialog-header.svelte"
+				},
+				{
+					"type": "registry:file",
+					"path": "src/lib/components/ui/dialog/dialog-overlay.svelte"
+				},
+				{
+					"type": "registry:file",
+					"path": "src/lib/components/ui/dialog/dialog-portal.svelte"
+				},
+				{
+					"type": "registry:file",
+					"path": "src/lib/components/ui/dialog/dialog-title.svelte"
+				},
+				{
+					"type": "registry:file",
+					"path": "src/lib/components/ui/dialog/dialog-trigger.svelte"
+				},
+				{
+					"type": "registry:file",
+					"path": "src/lib/components/ui/dialog/dialog.svelte"
+				},
+				{
+					"type": "registry:file",
+					"path": "src/lib/components/ui/dialog/index.ts"
+				}
+			]
+		},
+		{
+			"name": "drawer",
+			"type": "registry:ui",
+			"registryDependencies": [],
+			"files": [
+				{
+					"type": "registry:file",
+					"path": "src/lib/components/ui/drawer/drawer-close.svelte"
+				},
+				{
+					"type": "registry:file",
+					"path": "src/lib/components/ui/drawer/drawer-content.svelte"
+				},
+				{
+					"type": "registry:file",
+					"path": "src/lib/components/ui/drawer/drawer-description.svelte"
+				},
+				{
+					"type": "registry:file",
+					"path": "src/lib/components/ui/drawer/drawer-footer.svelte"
+				},
+				{
+					"type": "registry:file",
+					"path": "src/lib/components/ui/drawer/drawer-header.svelte"
+				},
+				{
+					"type": "registry:file",
+					"path": "src/lib/components/ui/drawer/drawer-nested.svelte"
+				},
+				{
+					"type": "registry:file",
+					"path": "src/lib/components/ui/drawer/drawer-overlay.svelte"
+				},
+				{
+					"type": "registry:file",
+					"path": "src/lib/components/ui/drawer/drawer-portal.svelte"
+				},
+				{
+					"type": "registry:file",
+					"path": "src/lib/components/ui/drawer/drawer-title.svelte"
+				},
+				{
+					"type": "registry:file",
+					"path": "src/lib/components/ui/drawer/drawer-trigger.svelte"
+				},
+				{
+					"type": "registry:file",
+					"path": "src/lib/components/ui/drawer/drawer.svelte"
+				},
+				{
+					"type": "registry:file",
+					"path": "src/lib/components/ui/drawer/index.ts"
+				}
+			]
+		},
+		{
+			"name": "dropdown-menu",
+			"type": "registry:ui",
+			"registryDependencies": [],
+			"files": [
+				{
+					"type": "registry:file",
+					"path": "src/lib/components/ui/dropdown-menu/dropdown-menu-checkbox-group.svelte"
+				},
+				{
+					"type": "registry:file",
+					"path": "src/lib/components/ui/dropdown-menu/dropdown-menu-checkbox-item.svelte"
+				},
+				{
+					"type": "registry:file",
+					"path": "src/lib/components/ui/dropdown-menu/dropdown-menu-content.svelte"
+				},
+				{
+					"type": "registry:file",
+					"path": "src/lib/components/ui/dropdown-menu/dropdown-menu-group-heading.svelte"
+				},
+				{
+					"type": "registry:file",
+					"path": "src/lib/components/ui/dropdown-menu/dropdown-menu-group.svelte"
+				},
+				{
+					"type": "registry:file",
+					"path": "src/lib/components/ui/dropdown-menu/dropdown-menu-item.svelte"
+				},
+				{
+					"type": "registry:file",
+					"path": "src/lib/components/ui/dropdown-menu/dropdown-menu-label.svelte"
+				},
+				{
+					"type": "registry:file",
+					"path": "src/lib/components/ui/dropdown-menu/dropdown-menu-portal.svelte"
+				},
+				{
+					"type": "registry:file",
+					"path": "src/lib/components/ui/dropdown-menu/dropdown-menu-radio-group.svelte"
+				},
+				{
+					"type": "registry:file",
+					"path": "src/lib/components/ui/dropdown-menu/dropdown-menu-radio-item.svelte"
+				},
+				{
+					"type": "registry:file",
+					"path": "src/lib/components/ui/dropdown-menu/dropdown-menu-separator.svelte"
+				},
+				{
+					"type": "registry:file",
+					"path": "src/lib/components/ui/dropdown-menu/dropdown-menu-shortcut.svelte"
+				},
+				{
+					"type": "registry:file",
+					"path": "src/lib/components/ui/dropdown-menu/dropdown-menu-sub-content.svelte"
+				},
+				{
+					"type": "registry:file",
+					"path": "src/lib/components/ui/dropdown-menu/dropdown-menu-sub-trigger.svelte"
+				},
+				{
+					"type": "registry:file",
+					"path": "src/lib/components/ui/dropdown-menu/dropdown-menu-sub.svelte"
+				},
+				{
+					"type": "registry:file",
+					"path": "src/lib/components/ui/dropdown-menu/dropdown-menu-trigger.svelte"
+				},
+				{
+					"type": "registry:file",
+					"path": "src/lib/components/ui/dropdown-menu/dropdown-menu.svelte"
+				},
+				{
+					"type": "registry:file",
+					"path": "src/lib/components/ui/dropdown-menu/index.ts"
+				}
+			]
+		},
+		{
+			"name": "empty",
+			"type": "registry:ui",
+			"registryDependencies": [],
+			"files": [
+				{
+					"type": "registry:file",
+					"path": "src/lib/components/ui/empty/empty-content.svelte"
+				},
+				{
+					"type": "registry:file",
+					"path": "src/lib/components/ui/empty/empty-description.svelte"
+				},
+				{
+					"type": "registry:file",
+					"path": "src/lib/components/ui/empty/empty-header.svelte"
+				},
+				{
+					"type": "registry:file",
+					"path": "src/lib/components/ui/empty/empty-media.svelte"
+				},
+				{
+					"type": "registry:file",
+					"path": "src/lib/components/ui/empty/empty-title.svelte"
+				},
+				{
+					"type": "registry:file",
+					"path": "src/lib/components/ui/empty/empty.svelte"
+				},
+				{
+					"type": "registry:file",
+					"path": "src/lib/components/ui/empty/index.ts"
+				}
+			]
+		},
+		{
+			"name": "field",
+			"type": "registry:ui",
+			"registryDependencies": ["label", "separator"],
+			"files": [
+				{
+					"type": "registry:file",
+					"path": "src/lib/components/ui/field/field-content.svelte"
+				},
+				{
+					"type": "registry:file",
+					"path": "src/lib/components/ui/field/field-description.svelte"
+				},
+				{
+					"type": "registry:file",
+					"path": "src/lib/components/ui/field/field-error.svelte"
+				},
+				{
+					"type": "registry:file",
+					"path": "src/lib/components/ui/field/field-group.svelte"
+				},
+				{
+					"type": "registry:file",
+					"path": "src/lib/components/ui/field/field-label.svelte"
+				},
+				{
+					"type": "registry:file",
+					"path": "src/lib/components/ui/field/field-legend.svelte"
+				},
+				{
+					"type": "registry:file",
+					"path": "src/lib/components/ui/field/field-separator.svelte"
+				},
+				{
+					"type": "registry:file",
+					"path": "src/lib/components/ui/field/field-set.svelte"
+				},
+				{
+					"type": "registry:file",
+					"path": "src/lib/components/ui/field/field-title.svelte"
+				},
+				{
+					"type": "registry:file",
+					"path": "src/lib/components/ui/field/field.svelte"
+				},
+				{
+					"type": "registry:file",
+					"path": "src/lib/components/ui/field/index.ts"
+				}
+			]
+		},
+		{
+			"name": "form",
+			"type": "registry:ui",
+			"registryDependencies": ["button", "label"],
+			"files": [
+				{
+					"type": "registry:file",
+					"path": "src/lib/components/ui/form/form-button.svelte"
+				},
+				{
+					"type": "registry:file",
+					"path": "src/lib/components/ui/form/form-description.svelte"
+				},
+				{
+					"type": "registry:file",
+					"path": "src/lib/components/ui/form/form-element-field.svelte"
+				},
+				{
+					"type": "registry:file",
+					"path": "src/lib/components/ui/form/form-field-errors.svelte"
+				},
+				{
+					"type": "registry:file",
+					"path": "src/lib/components/ui/form/form-field.svelte"
+				},
+				{
+					"type": "registry:file",
+					"path": "src/lib/components/ui/form/form-fieldset.svelte"
+				},
+				{
+					"type": "registry:file",
+					"path": "src/lib/components/ui/form/form-label.svelte"
+				},
+				{
+					"type": "registry:file",
+					"path": "src/lib/components/ui/form/form-legend.svelte"
+				},
+				{
+					"type": "registry:file",
+					"path": "src/lib/components/ui/form/index.ts"
+				}
+			]
+		},
+		{
+			"name": "hover-card",
+			"type": "registry:ui",
+			"registryDependencies": [],
+			"files": [
+				{
+					"type": "registry:file",
+					"path": "src/lib/components/ui/hover-card/hover-card-content.svelte"
+				},
+				{
+					"type": "registry:file",
+					"path": "src/lib/components/ui/hover-card/hover-card-portal.svelte"
+				},
+				{
+					"type": "registry:file",
+					"path": "src/lib/components/ui/hover-card/hover-card-trigger.svelte"
+				},
+				{
+					"type": "registry:file",
+					"path": "src/lib/components/ui/hover-card/hover-card.svelte"
+				},
+				{
+					"type": "registry:file",
+					"path": "src/lib/components/ui/hover-card/index.ts"
+				}
+			]
+		},
+		{
+			"name": "input",
+			"type": "registry:ui",
+			"registryDependencies": [],
+			"files": [
+				{
+					"type": "registry:file",
+					"path": "src/lib/components/ui/input/index.ts"
+				},
+				{
+					"type": "registry:file",
+					"path": "src/lib/components/ui/input/input.svelte"
+				}
+			]
+		},
+		{
+			"name": "input-group",
+			"type": "registry:ui",
+			"registryDependencies": ["button", "input", "textarea"],
+			"files": [
+				{
+					"type": "registry:file",
+					"path": "src/lib/components/ui/input-group/index.ts"
+				},
+				{
+					"type": "registry:file",
+					"path": "src/lib/components/ui/input-group/input-group-addon.svelte"
+				},
+				{
+					"type": "registry:file",
+					"path": "src/lib/components/ui/input-group/input-group-button.svelte"
+				},
+				{
+					"type": "registry:file",
+					"path": "src/lib/components/ui/input-group/input-group-input.svelte"
+				},
+				{
+					"type": "registry:file",
+					"path": "src/lib/components/ui/input-group/input-group-text.svelte"
+				},
+				{
+					"type": "registry:file",
+					"path": "src/lib/components/ui/input-group/input-group-textarea.svelte"
+				},
+				{
+					"type": "registry:file",
+					"path": "src/lib/components/ui/input-group/input-group.svelte"
+				}
+			]
+		},
+		{
+			"name": "input-otp",
+			"type": "registry:ui",
+			"registryDependencies": [],
+			"files": [
+				{
+					"type": "registry:file",
+					"path": "src/lib/components/ui/input-otp/index.ts"
+				},
+				{
+					"type": "registry:file",
+					"path": "src/lib/components/ui/input-otp/input-otp-group.svelte"
+				},
+				{
+					"type": "registry:file",
+					"path": "src/lib/components/ui/input-otp/input-otp-separator.svelte"
+				},
+				{
+					"type": "registry:file",
+					"path": "src/lib/components/ui/input-otp/input-otp-slot.svelte"
+				},
+				{
+					"type": "registry:file",
+					"path": "src/lib/components/ui/input-otp/input-otp.svelte"
+				}
+			]
+		},
+		{
+			"name": "item",
+			"type": "registry:ui",
+			"registryDependencies": ["separator"],
+			"files": [
+				{
+					"type": "registry:file",
+					"path": "src/lib/components/ui/item/index.ts"
+				},
+				{
+					"type": "registry:file",
+					"path": "src/lib/components/ui/item/item-actions.svelte"
+				},
+				{
+					"type": "registry:file",
+					"path": "src/lib/components/ui/item/item-content.svelte"
+				},
+				{
+					"type": "registry:file",
+					"path": "src/lib/components/ui/item/item-description.svelte"
+				},
+				{
+					"type": "registry:file",
+					"path": "src/lib/components/ui/item/item-footer.svelte"
+				},
+				{
+					"type": "registry:file",
+					"path": "src/lib/components/ui/item/item-group.svelte"
+				},
+				{
+					"type": "registry:file",
+					"path": "src/lib/components/ui/item/item-header.svelte"
+				},
+				{
+					"type": "registry:file",
+					"path": "src/lib/components/ui/item/item-media.svelte"
+				},
+				{
+					"type": "registry:file",
+					"path": "src/lib/components/ui/item/item-separator.svelte"
+				},
+				{
+					"type": "registry:file",
+					"path": "src/lib/components/ui/item/item-title.svelte"
+				},
+				{
+					"type": "registry:file",
+					"path": "src/lib/components/ui/item/item.svelte"
+				}
+			]
+		},
+		{
+			"name": "kbd",
+			"type": "registry:ui",
+			"registryDependencies": [],
+			"files": [
+				{
+					"type": "registry:file",
+					"path": "src/lib/components/ui/kbd/index.ts"
+				},
+				{
+					"type": "registry:file",
+					"path": "src/lib/components/ui/kbd/kbd-group.svelte"
+				},
+				{
+					"type": "registry:file",
+					"path": "src/lib/components/ui/kbd/kbd.svelte"
+				}
+			]
+		},
+		{
+			"name": "label",
+			"type": "registry:ui",
+			"registryDependencies": [],
+			"files": [
+				{
+					"type": "registry:file",
+					"path": "src/lib/components/ui/label/index.ts"
+				},
+				{
+					"type": "registry:file",
+					"path": "src/lib/components/ui/label/label.svelte"
+				}
+			]
+		},
+		{
+			"name": "menubar",
+			"type": "registry:ui",
+			"registryDependencies": [],
+			"files": [
+				{
+					"type": "registry:file",
+					"path": "src/lib/components/ui/menubar/index.ts"
+				},
+				{
+					"type": "registry:file",
+					"path": "src/lib/components/ui/menubar/menubar-checkbox-item.svelte"
+				},
+				{
+					"type": "registry:file",
+					"path": "src/lib/components/ui/menubar/menubar-content.svelte"
+				},
+				{
+					"type": "registry:file",
+					"path": "src/lib/components/ui/menubar/menubar-group-heading.svelte"
+				},
+				{
+					"type": "registry:file",
+					"path": "src/lib/components/ui/menubar/menubar-group.svelte"
+				},
+				{
+					"type": "registry:file",
+					"path": "src/lib/components/ui/menubar/menubar-item.svelte"
+				},
+				{
+					"type": "registry:file",
+					"path": "src/lib/components/ui/menubar/menubar-label.svelte"
+				},
+				{
+					"type": "registry:file",
+					"path": "src/lib/components/ui/menubar/menubar-menu.svelte"
+				},
+				{
+					"type": "registry:file",
+					"path": "src/lib/components/ui/menubar/menubar-portal.svelte"
+				},
+				{
+					"type": "registry:file",
+					"path": "src/lib/components/ui/menubar/menubar-radio-group.svelte"
+				},
+				{
+					"type": "registry:file",
+					"path": "src/lib/components/ui/menubar/menubar-radio-item.svelte"
+				},
+				{
+					"type": "registry:file",
+					"path": "src/lib/components/ui/menubar/menubar-separator.svelte"
+				},
+				{
+					"type": "registry:file",
+					"path": "src/lib/components/ui/menubar/menubar-shortcut.svelte"
+				},
+				{
+					"type": "registry:file",
+					"path": "src/lib/components/ui/menubar/menubar-sub-content.svelte"
+				},
+				{
+					"type": "registry:file",
+					"path": "src/lib/components/ui/menubar/menubar-sub-trigger.svelte"
+				},
+				{
+					"type": "registry:file",
+					"path": "src/lib/components/ui/menubar/menubar-sub.svelte"
+				},
+				{
+					"type": "registry:file",
+					"path": "src/lib/components/ui/menubar/menubar-trigger.svelte"
+				},
+				{
+					"type": "registry:file",
+					"path": "src/lib/components/ui/menubar/menubar.svelte"
+				}
+			]
+		},
+		{
+			"name": "native-select",
+			"type": "registry:ui",
+			"registryDependencies": [],
+			"files": [
+				{
+					"type": "registry:file",
+					"path": "src/lib/components/ui/native-select/index.ts"
+				},
+				{
+					"type": "registry:file",
+					"path": "src/lib/components/ui/native-select/native-select-opt-group.svelte"
+				},
+				{
+					"type": "registry:file",
+					"path": "src/lib/components/ui/native-select/native-select-option.svelte"
+				},
+				{
+					"type": "registry:file",
+					"path": "src/lib/components/ui/native-select/native-select.svelte"
+				}
+			]
+		},
+		{
+			"name": "navigation-menu",
+			"type": "registry:ui",
+			"registryDependencies": [],
+			"files": [
+				{
+					"type": "registry:file",
+					"path": "src/lib/components/ui/navigation-menu/index.ts"
+				},
+				{
+					"type": "registry:file",
+					"path": "src/lib/components/ui/navigation-menu/navigation-menu-content.svelte"
+				},
+				{
+					"type": "registry:file",
+					"path": "src/lib/components/ui/navigation-menu/navigation-menu-indicator.svelte"
+				},
+				{
+					"type": "registry:file",
+					"path": "src/lib/components/ui/navigation-menu/navigation-menu-item.svelte"
+				},
+				{
+					"type": "registry:file",
+					"path": "src/lib/components/ui/navigation-menu/navigation-menu-link.svelte"
+				},
+				{
+					"type": "registry:file",
+					"path": "src/lib/components/ui/navigation-menu/navigation-menu-list.svelte"
+				},
+				{
+					"type": "registry:file",
+					"path": "src/lib/components/ui/navigation-menu/navigation-menu-trigger.svelte"
+				},
+				{
+					"type": "registry:file",
+					"path": "src/lib/components/ui/navigation-menu/navigation-menu-viewport.svelte"
+				},
+				{
+					"type": "registry:file",
+					"path": "src/lib/components/ui/navigation-menu/navigation-menu.svelte"
+				}
+			]
+		},
+		{
+			"name": "pagination",
+			"type": "registry:ui",
+			"registryDependencies": ["button"],
+			"files": [
+				{
+					"type": "registry:file",
+					"path": "src/lib/components/ui/pagination/index.ts"
+				},
+				{
+					"type": "registry:file",
+					"path": "src/lib/components/ui/pagination/pagination-content.svelte"
+				},
+				{
+					"type": "registry:file",
+					"path": "src/lib/components/ui/pagination/pagination-ellipsis.svelte"
+				},
+				{
+					"type": "registry:file",
+					"path": "src/lib/components/ui/pagination/pagination-item.svelte"
+				},
+				{
+					"type": "registry:file",
+					"path": "src/lib/components/ui/pagination/pagination-link.svelte"
+				},
+				{
+					"type": "registry:file",
+					"path": "src/lib/components/ui/pagination/pagination-next-button.svelte"
+				},
+				{
+					"type": "registry:file",
+					"path": "src/lib/components/ui/pagination/pagination-next.svelte"
+				},
+				{
+					"type": "registry:file",
+					"path": "src/lib/components/ui/pagination/pagination-prev-button.svelte"
+				},
+				{
+					"type": "registry:file",
+					"path": "src/lib/components/ui/pagination/pagination-previous.svelte"
+				},
+				{
+					"type": "registry:file",
+					"path": "src/lib/components/ui/pagination/pagination.svelte"
+				}
+			]
+		},
+		{
+			"name": "popover",
+			"type": "registry:ui",
+			"registryDependencies": [],
+			"files": [
+				{
+					"type": "registry:file",
+					"path": "src/lib/components/ui/popover/index.ts"
+				},
+				{
+					"type": "registry:file",
+					"path": "src/lib/components/ui/popover/popover-close.svelte"
+				},
+				{
+					"type": "registry:file",
+					"path": "src/lib/components/ui/popover/popover-content.svelte"
+				},
+				{
+					"type": "registry:file",
+					"path": "src/lib/components/ui/popover/popover-portal.svelte"
+				},
+				{
+					"type": "registry:file",
+					"path": "src/lib/components/ui/popover/popover-trigger.svelte"
+				},
+				{
+					"type": "registry:file",
+					"path": "src/lib/components/ui/popover/popover.svelte"
+				}
+			]
+		},
+		{
+			"name": "progress",
+			"type": "registry:ui",
+			"registryDependencies": [],
+			"files": [
+				{
+					"type": "registry:file",
+					"path": "src/lib/components/ui/progress/index.ts"
+				},
+				{
+					"type": "registry:file",
+					"path": "src/lib/components/ui/progress/progress.svelte"
+				}
+			]
+		},
+		{
+			"name": "radio-group",
+			"type": "registry:ui",
+			"registryDependencies": [],
+			"files": [
+				{
+					"type": "registry:file",
+					"path": "src/lib/components/ui/radio-group/index.ts"
+				},
+				{
+					"type": "registry:file",
+					"path": "src/lib/components/ui/radio-group/radio-group-item.svelte"
+				},
+				{
+					"type": "registry:file",
+					"path": "src/lib/components/ui/radio-group/radio-group.svelte"
+				}
+			]
+		},
+		{
+			"name": "range-calendar",
+			"type": "registry:ui",
+			"registryDependencies": ["button"],
+			"files": [
+				{
+					"type": "registry:file",
+					"path": "src/lib/components/ui/range-calendar/index.ts"
+				},
+				{
+					"type": "registry:file",
+					"path": "src/lib/components/ui/range-calendar/range-calendar-caption.svelte"
+				},
+				{
+					"type": "registry:file",
+					"path": "src/lib/components/ui/range-calendar/range-calendar-cell.svelte"
+				},
+				{
+					"type": "registry:file",
+					"path": "src/lib/components/ui/range-calendar/range-calendar-day.svelte"
+				},
+				{
+					"type": "registry:file",
+					"path": "src/lib/components/ui/range-calendar/range-calendar-grid-body.svelte"
+				},
+				{
+					"type": "registry:file",
+					"path": "src/lib/components/ui/range-calendar/range-calendar-grid-head.svelte"
+				},
+				{
+					"type": "registry:file",
+					"path": "src/lib/components/ui/range-calendar/range-calendar-grid-row.svelte"
+				},
+				{
+					"type": "registry:file",
+					"path": "src/lib/components/ui/range-calendar/range-calendar-grid.svelte"
+				},
+				{
+					"type": "registry:file",
+					"path": "src/lib/components/ui/range-calendar/range-calendar-head-cell.svelte"
+				},
+				{
+					"type": "registry:file",
+					"path": "src/lib/components/ui/range-calendar/range-calendar-header.svelte"
+				},
+				{
+					"type": "registry:file",
+					"path": "src/lib/components/ui/range-calendar/range-calendar-heading.svelte"
+				},
+				{
+					"type": "registry:file",
+					"path": "src/lib/components/ui/range-calendar/range-calendar-month-select.svelte"
+				},
+				{
+					"type": "registry:file",
+					"path": "src/lib/components/ui/range-calendar/range-calendar-month.svelte"
+				},
+				{
+					"type": "registry:file",
+					"path": "src/lib/components/ui/range-calendar/range-calendar-months.svelte"
+				},
+				{
+					"type": "registry:file",
+					"path": "src/lib/components/ui/range-calendar/range-calendar-nav.svelte"
+				},
+				{
+					"type": "registry:file",
+					"path": "src/lib/components/ui/range-calendar/range-calendar-next-button.svelte"
+				},
+				{
+					"type": "registry:file",
+					"path": "src/lib/components/ui/range-calendar/range-calendar-prev-button.svelte"
+				},
+				{
+					"type": "registry:file",
+					"path": "src/lib/components/ui/range-calendar/range-calendar-year-select.svelte"
+				},
+				{
+					"type": "registry:file",
+					"path": "src/lib/components/ui/range-calendar/range-calendar.svelte"
+				}
+			]
+		},
+		{
+			"name": "resizable",
+			"type": "registry:ui",
+			"registryDependencies": [],
+			"files": [
+				{
+					"type": "registry:file",
+					"path": "src/lib/components/ui/resizable/index.ts"
+				},
+				{
+					"type": "registry:file",
+					"path": "src/lib/components/ui/resizable/resizable-handle.svelte"
+				},
+				{
+					"type": "registry:file",
+					"path": "src/lib/components/ui/resizable/resizable-pane-group.svelte"
+				}
+			]
+		},
+		{
+			"name": "scroll-area",
+			"type": "registry:ui",
+			"registryDependencies": [],
+			"files": [
+				{
+					"type": "registry:file",
+					"path": "src/lib/components/ui/scroll-area/index.ts"
+				},
+				{
+					"type": "registry:file",
+					"path": "src/lib/components/ui/scroll-area/scroll-area-scrollbar.svelte"
+				},
+				{
+					"type": "registry:file",
+					"path": "src/lib/components/ui/scroll-area/scroll-area.svelte"
+				}
+			]
+		},
+		{
+			"name": "select",
+			"type": "registry:ui",
+			"registryDependencies": ["separator"],
+			"files": [
+				{
+					"type": "registry:file",
+					"path": "src/lib/components/ui/select/index.ts"
+				},
+				{
+					"type": "registry:file",
+					"path": "src/lib/components/ui/select/select-content.svelte"
+				},
+				{
+					"type": "registry:file",
+					"path": "src/lib/components/ui/select/select-group-heading.svelte"
+				},
+				{
+					"type": "registry:file",
+					"path": "src/lib/components/ui/select/select-group.svelte"
+				},
+				{
+					"type": "registry:file",
+					"path": "src/lib/components/ui/select/select-item.svelte"
+				},
+				{
+					"type": "registry:file",
+					"path": "src/lib/components/ui/select/select-label.svelte"
+				},
+				{
+					"type": "registry:file",
+					"path": "src/lib/components/ui/select/select-portal.svelte"
+				},
+				{
+					"type": "registry:file",
+					"path": "src/lib/components/ui/select/select-scroll-down-button.svelte"
+				},
+				{
+					"type": "registry:file",
+					"path": "src/lib/components/ui/select/select-scroll-up-button.svelte"
+				},
+				{
+					"type": "registry:file",
+					"path": "src/lib/components/ui/select/select-separator.svelte"
+				},
+				{
+					"type": "registry:file",
+					"path": "src/lib/components/ui/select/select-trigger.svelte"
+				},
+				{
+					"type": "registry:file",
+					"path": "src/lib/components/ui/select/select.svelte"
+				}
+			]
+		},
+		{
+			"name": "separator",
+			"type": "registry:ui",
+			"registryDependencies": [],
+			"files": [
+				{
+					"type": "registry:file",
+					"path": "src/lib/components/ui/separator/index.ts"
+				},
+				{
+					"type": "registry:file",
+					"path": "src/lib/components/ui/separator/separator.svelte"
+				}
+			]
+		},
+		{
+			"name": "sheet",
+			"type": "registry:ui",
+			"registryDependencies": [],
+			"files": [
+				{
+					"type": "registry:file",
+					"path": "src/lib/components/ui/sheet/index.ts"
+				},
+				{
+					"type": "registry:file",
+					"path": "src/lib/components/ui/sheet/sheet-close.svelte"
+				},
+				{
+					"type": "registry:file",
+					"path": "src/lib/components/ui/sheet/sheet-content.svelte"
+				},
+				{
+					"type": "registry:file",
+					"path": "src/lib/components/ui/sheet/sheet-description.svelte"
+				},
+				{
+					"type": "registry:file",
+					"path": "src/lib/components/ui/sheet/sheet-footer.svelte"
+				},
+				{
+					"type": "registry:file",
+					"path": "src/lib/components/ui/sheet/sheet-header.svelte"
+				},
+				{
+					"type": "registry:file",
+					"path": "src/lib/components/ui/sheet/sheet-overlay.svelte"
+				},
+				{
+					"type": "registry:file",
+					"path": "src/lib/components/ui/sheet/sheet-portal.svelte"
+				},
+				{
+					"type": "registry:file",
+					"path": "src/lib/components/ui/sheet/sheet-title.svelte"
+				},
+				{
+					"type": "registry:file",
+					"path": "src/lib/components/ui/sheet/sheet-trigger.svelte"
+				},
+				{
+					"type": "registry:file",
+					"path": "src/lib/components/ui/sheet/sheet.svelte"
+				}
+			]
+		},
+		{
+			"name": "sidebar",
+			"type": "registry:ui",
+			"registryDependencies": ["is-mobile", "input", "tooltip", "skeleton", "separator", "button", "sheet"],
+			"files": [
+				{
+					"type": "registry:file",
+					"path": "src/lib/components/ui/sidebar/constants.ts"
+				},
+				{
+					"type": "registry:file",
+					"path": "src/lib/components/ui/sidebar/context.svelte.ts"
+				},
+				{
+					"type": "registry:file",
+					"path": "src/lib/components/ui/sidebar/index.ts"
+				},
+				{
+					"type": "registry:file",
+					"path": "src/lib/components/ui/sidebar/sidebar-content.svelte"
+				},
+				{
+					"type": "registry:file",
+					"path": "src/lib/components/ui/sidebar/sidebar-footer.svelte"
+				},
+				{
+					"type": "registry:file",
+					"path": "src/lib/components/ui/sidebar/sidebar-group-action.svelte"
+				},
+				{
+					"type": "registry:file",
+					"path": "src/lib/components/ui/sidebar/sidebar-group-content.svelte"
+				},
+				{
+					"type": "registry:file",
+					"path": "src/lib/components/ui/sidebar/sidebar-group-label.svelte"
+				},
+				{
+					"type": "registry:file",
+					"path": "src/lib/components/ui/sidebar/sidebar-group.svelte"
+				},
+				{
+					"type": "registry:file",
+					"path": "src/lib/components/ui/sidebar/sidebar-header.svelte"
+				},
+				{
+					"type": "registry:file",
+					"path": "src/lib/components/ui/sidebar/sidebar-input.svelte"
+				},
+				{
+					"type": "registry:file",
+					"path": "src/lib/components/ui/sidebar/sidebar-inset.svelte"
+				},
+				{
+					"type": "registry:file",
+					"path": "src/lib/components/ui/sidebar/sidebar-menu-action.svelte"
+				},
+				{
+					"type": "registry:file",
+					"path": "src/lib/components/ui/sidebar/sidebar-menu-badge.svelte"
+				},
+				{
+					"type": "registry:file",
+					"path": "src/lib/components/ui/sidebar/sidebar-menu-button.svelte"
+				},
+				{
+					"type": "registry:file",
+					"path": "src/lib/components/ui/sidebar/sidebar-menu-item.svelte"
+				},
+				{
+					"type": "registry:file",
+					"path": "src/lib/components/ui/sidebar/sidebar-menu-skeleton.svelte"
+				},
+				{
+					"type": "registry:file",
+					"path": "src/lib/components/ui/sidebar/sidebar-menu-sub-button.svelte"
+				},
+				{
+					"type": "registry:file",
+					"path": "src/lib/components/ui/sidebar/sidebar-menu-sub-item.svelte"
+				},
+				{
+					"type": "registry:file",
+					"path": "src/lib/components/ui/sidebar/sidebar-menu-sub.svelte"
+				},
+				{
+					"type": "registry:file",
+					"path": "src/lib/components/ui/sidebar/sidebar-menu.svelte"
+				},
+				{
+					"type": "registry:file",
+					"path": "src/lib/components/ui/sidebar/sidebar-provider.svelte"
+				},
+				{
+					"type": "registry:file",
+					"path": "src/lib/components/ui/sidebar/sidebar-rail.svelte"
+				},
+				{
+					"type": "registry:file",
+					"path": "src/lib/components/ui/sidebar/sidebar-separator.svelte"
+				},
+				{
+					"type": "registry:file",
+					"path": "src/lib/components/ui/sidebar/sidebar-trigger.svelte"
+				},
+				{
+					"type": "registry:file",
+					"path": "src/lib/components/ui/sidebar/sidebar.svelte"
+				}
+			]
+		},
+		{
+			"name": "skeleton",
+			"type": "registry:ui",
+			"registryDependencies": [],
+			"files": [
+				{
+					"type": "registry:file",
+					"path": "src/lib/components/ui/skeleton/index.ts"
+				},
+				{
+					"type": "registry:file",
+					"path": "src/lib/components/ui/skeleton/skeleton.svelte"
+				}
+			]
+		},
+		{
+			"name": "slider",
+			"type": "registry:ui",
+			"registryDependencies": [],
+			"files": [
+				{
+					"type": "registry:file",
+					"path": "src/lib/components/ui/slider/index.ts"
+				},
+				{
+					"type": "registry:file",
+					"path": "src/lib/components/ui/slider/slider.svelte"
+				}
+			]
+		},
+		{
+			"name": "sonner",
+			"type": "registry:ui",
+			"registryDependencies": [],
+			"files": [
+				{
+					"type": "registry:file",
+					"path": "src/lib/components/ui/sonner/index.ts"
+				},
+				{
+					"type": "registry:file",
+					"path": "src/lib/components/ui/sonner/sonner.svelte"
+				}
+			]
+		},
+		{
+			"name": "spinner",
+			"type": "registry:ui",
+			"registryDependencies": [],
+			"files": [
+				{
+					"type": "registry:file",
+					"path": "src/lib/components/ui/spinner/index.ts"
+				},
+				{
+					"type": "registry:file",
+					"path": "src/lib/components/ui/spinner/spinner.svelte"
+				}
+			]
+		},
+		{
+			"name": "switch",
+			"type": "registry:ui",
+			"registryDependencies": [],
+			"files": [
+				{
+					"type": "registry:file",
+					"path": "src/lib/components/ui/switch/index.ts"
+				},
+				{
+					"type": "registry:file",
+					"path": "src/lib/components/ui/switch/switch.svelte"
+				}
+			]
+		},
+		{
+			"name": "table",
+			"type": "registry:ui",
+			"registryDependencies": [],
+			"files": [
+				{
+					"type": "registry:file",
+					"path": "src/lib/components/ui/table/index.ts"
+				},
+				{
+					"type": "registry:file",
+					"path": "src/lib/components/ui/table/table-body.svelte"
+				},
+				{
+					"type": "registry:file",
+					"path": "src/lib/components/ui/table/table-caption.svelte"
+				},
+				{
+					"type": "registry:file",
+					"path": "src/lib/components/ui/table/table-cell.svelte"
+				},
+				{
+					"type": "registry:file",
+					"path": "src/lib/components/ui/table/table-footer.svelte"
+				},
+				{
+					"type": "registry:file",
+					"path": "src/lib/components/ui/table/table-head.svelte"
+				},
+				{
+					"type": "registry:file",
+					"path": "src/lib/components/ui/table/table-header.svelte"
+				},
+				{
+					"type": "registry:file",
+					"path": "src/lib/components/ui/table/table-row.svelte"
+				},
+				{
+					"type": "registry:file",
+					"path": "src/lib/components/ui/table/table.svelte"
+				}
+			]
+		},
+		{
+			"name": "tabs",
+			"type": "registry:ui",
+			"registryDependencies": [],
+			"files": [
+				{
+					"type": "registry:file",
+					"path": "src/lib/components/ui/tabs/index.ts"
+				},
+				{
+					"type": "registry:file",
+					"path": "src/lib/components/ui/tabs/tabs-content.svelte"
+				},
+				{
+					"type": "registry:file",
+					"path": "src/lib/components/ui/tabs/tabs-list.svelte"
+				},
+				{
+					"type": "registry:file",
+					"path": "src/lib/components/ui/tabs/tabs-trigger.svelte"
+				},
+				{
+					"type": "registry:file",
+					"path": "src/lib/components/ui/tabs/tabs.svelte"
+				}
+			]
+		},
+		{
+			"name": "textarea",
+			"type": "registry:ui",
+			"registryDependencies": [],
+			"files": [
+				{
+					"type": "registry:file",
+					"path": "src/lib/components/ui/textarea/index.ts"
+				},
+				{
+					"type": "registry:file",
+					"path": "src/lib/components/ui/textarea/textarea.svelte"
+				}
+			]
+		},
+		{
+			"name": "toggle",
+			"type": "registry:ui",
+			"registryDependencies": [],
+			"files": [
+				{
+					"type": "registry:file",
+					"path": "src/lib/components/ui/toggle/index.ts"
+				},
+				{
+					"type": "registry:file",
+					"path": "src/lib/components/ui/toggle/toggle.svelte"
+				}
+			]
+		},
+		{
+			"name": "toggle-group",
+			"type": "registry:ui",
+			"registryDependencies": ["toggle"],
+			"files": [
+				{
+					"type": "registry:file",
+					"path": "src/lib/components/ui/toggle-group/index.ts"
+				},
+				{
+					"type": "registry:file",
+					"path": "src/lib/components/ui/toggle-group/toggle-group-item.svelte"
+				},
+				{
+					"type": "registry:file",
+					"path": "src/lib/components/ui/toggle-group/toggle-group.svelte"
+				}
+			]
+		},
+		{
+			"name": "tooltip",
+			"type": "registry:ui",
+			"registryDependencies": [],
+			"files": [
+				{
+					"type": "registry:file",
+					"path": "src/lib/components/ui/tooltip/index.ts"
+				},
+				{
+					"type": "registry:file",
+					"path": "src/lib/components/ui/tooltip/tooltip-content.svelte"
+				},
+				{
+					"type": "registry:file",
+					"path": "src/lib/components/ui/tooltip/tooltip-portal.svelte"
+				},
+				{
+					"type": "registry:file",
+					"path": "src/lib/components/ui/tooltip/tooltip-provider.svelte"
+				},
+				{
+					"type": "registry:file",
+					"path": "src/lib/components/ui/tooltip/tooltip-trigger.svelte"
+				},
+				{
+					"type": "registry:file",
+					"path": "src/lib/components/ui/tooltip/tooltip.svelte"
+				}
+			]
+		},
+		{
+			"name": "is-mobile",
+			"type": "registry:hook",
+			"registryDependencies": [],
+			"files": [
+				{
+					"type": "registry:hook",
+					"path": "src/lib/hooks/is-mobile.svelte.ts"
+				}
+			]
+		},
+		{
+			"name": "utils",
+			"type": "registry:lib",
+			"registryDependencies": [],
+			"files": [
+				{
+					"type": "registry:lib",
+					"path": "src/lib/utils.ts"
+				}
+			]
+		}
+	]
+}
